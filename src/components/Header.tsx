@@ -59,9 +59,11 @@ const Header = () => {
                 {item.name}
               </a>
             ))}
-            <Button variant="secondary" className="bg-accent text-accent-foreground hover:bg-accent/90">
-              Get Quote
-            </Button>
+            <a href="/contact">
+              <Button variant="secondary" className="bg-accent text-accent-foreground hover:bg-accent/90">
+                Get Quote
+              </Button>
+            </a>
           </nav>
 
           {/* Mobile menu button */}

@@ -18,13 +18,17 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" variant="secondary" className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold">
-                View Products
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-                Get Quote
-              </Button>
+              <a href="/products">
+                <Button size="lg" variant="secondary" className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold">
+                  View Products
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </a>
+              <a href="/contact">
+                <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+                  Get Quote
+                </Button>
+              </a>
             </div>
 
             {/* Stats */}

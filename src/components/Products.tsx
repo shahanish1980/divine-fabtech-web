@@ -85,19 +85,23 @@ const Products = () => {
 
                   {/* Action Buttons */}
                   <div className="space-y-3">
-                    <Button 
-                      className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
-                      variant="outline"
-                    >
-                      View Details
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                    <Button 
-                      className="w-full bg-accent text-accent-foreground hover:bg-accent/90"
-                      size="sm"
-                    >
-                      Quick Inquiry
-                    </Button>
+                    <a href={`/products/${product.id}`}>
+                      <Button 
+                        className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
+                        variant="outline"
+                      >
+                        View Details
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Button>
+                    </a>
+                    <a href="/contact">
+                      <Button 
+                        className="w-full bg-accent text-accent-foreground hover:bg-accent/90"
+                        size="sm"
+                      >
+                        Quick Inquiry
+                      </Button>
+                    </a>
                   </div>
                 </CardContent>
               </Card>
@@ -115,9 +119,11 @@ const Products = () => {
               We specialize in custom fabric solutions. Contact us to discuss your requirements.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-                Contact Us
-              </Button>
+              <a href="/contact">
+                <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+                  Contact Us
+                </Button>
+              </a>
               <Button size="lg" variant="outline">
                 Download Catalog
               </Button>
