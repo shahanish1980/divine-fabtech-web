@@ -58,7 +58,10 @@ const ProductsPage = () => {
         "Multiple color options",
         "Custom branding available",
         "Bulk manufacturing",
-        "Quality packaging"
+        "Quality packaging",
+        "Adjustable hood",
+        "Multiple pocket options",
+        "Various colors available"
       ],
       applications: [
         "Industrial use",
@@ -82,87 +85,6 @@ const ProductsPage = () => {
         "/Images/Poncho/transparent.jpeg",
         "/Images/Poncho/yellow.jpg"
       ]
-        "Adjustable hood",
-        "Multiple pocket options",
-        "Various colors available"
-      ],
-      applications: [
-        "Industrial workers",
-        "Security personnel",
-        "Construction workers",
-        "Agricultural workers",
-        "Emergency services",
-        "General public use"
-      ],
-      specifications: {
-        "Material": "PVC/Polyester",
-        "Thickness": "0.35mm - 0.5mm",
-        "Sizes": "S, M, L, XL, XXL",
-        "Colors": "Yellow, Blue, Green, Red",
-        "Standards": "IS 11871"
-      }
-    },
-    {
-      id: "fabrics",
-      title: "Industrial Fabrics",
-      category: "Specialized Materials",
-      price: "Starting from ₹80/sq meter",
-      image: "/placeholder.svg",
-      description: "Specialized fabric solutions for various industrial applications with superior performance characteristics.",
-      features: [
-        "Chemical resistant",
-        "Fire retardant options",
-        "High tensile strength",
-        "Abrasion resistant",
-        "Custom weaving patterns",
-        "Technical specifications"
-      ],
-      applications: [
-        "Filtration systems",
-        "Conveyor belts",
-        "Safety equipment",
-        "Geotextiles",
-        "Automotive interiors",
-        "Marine upholstery"
-      ],
-      specifications: {
-        "Material": "Polyester/Cotton/Blend",
-        "Weight": "200-800 GSM",
-        "Width": "1.5m - 3m",
-        "Treatments": "Waterproof, Fire-retardant",
-        "Certifications": "ISO 9001:2015"
-      }
-    },
-    {
-      id: "custom",
-      title: "Custom Solutions",
-      category: "Bespoke Manufacturing",
-      price: "Quote on Requirement",
-      image: "/placeholder.svg",
-      description: "Tailored fabric solutions designed to meet your specific industrial requirements and applications.",
-      features: [
-        "Custom design and engineering",
-        "Technical consultation",
-        "Prototype development",
-        "Quality testing",
-        "Volume production",
-        "After-sales support"
-      ],
-      applications: [
-        "Specialized industrial needs",
-        "OEM requirements",
-        "Government projects",
-        "Export orders",
-        "R&D collaborations",
-        "Innovative applications"
-      ],
-      specifications: {
-        "Process": "Design to Delivery",
-        "Timeline": "2-4 weeks",
-        "MOQ": "As per requirement",
-        "Support": "Technical & Commercial",
-        "Quality": "100% Tested"
-      }
     }
   ];
 
@@ -177,8 +99,8 @@ const ProductsPage = () => {
                 Our <span className="text-accent">Products</span>
               </h1>
               <p className="text-xl mb-8">
-                Premium industrial fabrics and tarpaulins engineered for durability, 
-                performance, and reliability in demanding applications.
+                Premium multilayered cross laminated tarpaulins and poncho raincoats. 
+                Custom sizes available for bulk orders.
               </p>
               <Link to="/">
                 <Button variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
@@ -215,7 +137,9 @@ const ProductsPage = () => {
                         {product.title}
                       </CardTitle>
                       <div className="text-right">
-                        <div className="text-lg font-semibold text-primary">{product.price}</div>
+                        <Badge variant="secondary" className="bg-accent text-accent-foreground">
+                          Bulk Orders Only
+                        </Badge>
                       </div>
                     </div>
                     <p className="text-muted-foreground">{product.description}</p>
