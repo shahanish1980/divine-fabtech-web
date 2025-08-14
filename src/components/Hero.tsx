@@ -1,91 +1,110 @@
-import { ArrowRight, Shield, Award, Truck } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ArrowRight, Phone, Mail, MapPin } from "lucide-react";
+import { useState, useEffect } from "react";
 
 const Hero = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  
+  const heroSlides = [
+    {
+      title: "Premium Industrial Fabrics",
+      subtitle: "Leading manufacturer of high-performance filter media and conveyor belts",
+      image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&h=800&fit=crop"
+    },
+    {
+      title: "Advanced Filter Solutions", 
+      subtitle: "PTFE membrane technology for extreme industrial applications",
+      image: "https://images.unsplash.com/photo-1562813733-b31f71025d54?w=1200&h=800&fit=crop"
+    },
+    {
+      title: "Conveyor Belt Excellence",
+      subtitle: "Heavy-duty belting solutions for mining and industrial operations", 
+      image: "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=1200&h=800&fit=crop"
+    }
+  ];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
-    <section className="relative bg-gradient-to-br from-primary via-primary/90 to-primary/80 text-primary-foreground">
-      <div className="container mx-auto px-4 py-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Content */}
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                Premium <span className="text-accent">Industrial Fabrics</span> & Tarpaulins
-              </h1>
-              <p className="text-xl md:text-2xl text-primary-foreground/90 leading-relaxed">
-                Manufacturing high-quality multilayered crosslaminated tarpaulins, raincoat ponchos, and custom industrial fabric solutions for over a decade.
-              </p>
-            </div>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Slider */}
+      <div className="absolute inset-0">
+        {heroSlides.map((slide, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-1000 ${
+              index === currentSlide ? 'opacity-100' : 'opacity-0'
+            }`}
+          >
+            <img
+              src={slide.image}
+              alt={slide.title}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-primary/80" />
+          </div>
+        ))}
+      </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a href="/products">
-                <Button size="lg" variant="secondary" className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold">
-                  View Products
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </a>
-              <a href="/contact">
-                <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-                  Get Quote
-                </Button>
-              </a>
-            </div>
-
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 pt-8 border-t border-primary-foreground/20">
-              <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-accent">10+</div>
-                <div className="text-sm text-primary-foreground/80">Years Experience</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-accent">500+</div>
-                <div className="text-sm text-primary-foreground/80">Happy Clients</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-accent">24/7</div>
-                <div className="text-sm text-primary-foreground/80">Support</div>
-              </div>
-            </div>
+      {/* Content */}
+      <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
+        <div className="max-w-4xl mx-auto animate-fade-in-up">
+          <h1 className="text-4xl md:text-7xl font-bold mb-6 leading-tight">
+            {heroSlides[currentSlide].title}
+          </h1>
+          <p className="text-lg md:text-2xl mb-8 text-primary-foreground/90 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+            {heroSlides[currentSlide].subtitle}
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground animate-glow">
+              Get Quote <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+            <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+              View Products
+            </Button>
           </div>
 
-          {/* Features */}
-          <div className="space-y-6">
-            <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-lg p-6 border border-primary-foreground/20">
-              <div className="flex items-start gap-4">
-                <div className="bg-accent text-accent-foreground p-3 rounded-lg">
-                  <Shield className="h-6 w-6" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-2">Premium Quality</h3>
-                  <p className="text-primary-foreground/80">Multi-layered crosslaminated tarpaulins with superior durability and weather resistance.</p>
-                </div>
-              </div>
+          {/* Quick Contact Info */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto animate-slide-in-left" style={{ animationDelay: '0.9s' }}>
+            <div className="flex items-center justify-center gap-2 text-primary-foreground/90">
+              <Phone className="h-5 w-5 text-accent" />
+              <span className="font-medium">9825148321</span>
             </div>
-
-            <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-lg p-6 border border-primary-foreground/20">
-              <div className="flex items-start gap-4">
-                <div className="bg-accent text-accent-foreground p-3 rounded-lg">
-                  <Award className="h-6 w-6" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-2">Custom Solutions</h3>
-                  <p className="text-primary-foreground/80">Tailored industrial fabric solutions designed to meet your specific requirements.</p>
-                </div>
-              </div>
+            <div className="flex items-center justify-center gap-2 text-primary-foreground/90">
+              <Mail className="h-5 w-5 text-accent" />
+              <span className="font-medium">divine.fabtech@gmail.com</span>
             </div>
-
-            <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-lg p-6 border border-primary-foreground/20">
-              <div className="flex items-start gap-4">
-                <div className="bg-accent text-accent-foreground p-3 rounded-lg">
-                  <Truck className="h-6 w-6" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-2">Fast Delivery</h3>
-                  <p className="text-primary-foreground/80">Quick turnaround times with reliable delivery across India.</p>
-                </div>
-              </div>
+            <div className="flex items-center justify-center gap-2 text-primary-foreground/90">
+              <MapPin className="h-5 w-5 text-accent" />
+              <span className="font-medium">Mumbai, India</span>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Slide Indicators */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 z-10">
+        {heroSlides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentSlide(index)}
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              index === currentSlide ? 'bg-accent scale-125' : 'bg-primary-foreground/50 hover:bg-primary-foreground/75'
+            }`}
+          />
+        ))}
+      </div>
+
+      {/* Animated Scroll Indicator */}
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="w-6 h-10 border-2 border-primary-foreground/50 rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-accent rounded-full mt-2 animate-pulse" />
         </div>
       </div>
     </section>
