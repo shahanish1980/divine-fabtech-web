@@ -8,17 +8,17 @@ const ProductsPage = () => {
   const products = [
     {
       id: "tarpaulins",
-      title: "Indoline Cross Laminated Tarpaulins",
-      category: "Heavy Duty Protection",
-      image: "/Images/Tarpauline/cross-laminated-multilayer-ldpe-ll-tarpaulins.jpeg",
-      description: "Our premium Indoline brand cross laminated tarpaulins offer superior strength and durability for all industrial applications.",
+      title: "Multilayered Cross Laminated Tarpaulins",
+      category: "CUSTOM SIZES FOR BULK ORDERS",
+      image: "/Images/Tarpauline/cover.jpeg",
+      description: "Our premium quality multilayered cross laminated tarpaulins offer superior strength and durability. We specialize in bulk manufacturing with custom sizes.",
       features: [
         "100% Waterproof",
         "UV Resistant coating",
         "Cross Laminated for extra strength",
-        "Temperature resistant",
         "Reinforced edges",
-        "Custom sizes available"
+        "Custom sizes available",
+        "Bulk orders only"
       ],
       applications: [
         "Industrial equipment covering",
@@ -32,20 +32,56 @@ const ProductsPage = () => {
         "Material": "Cross Laminated HDPE/LDPE",
         "Type": "Multilayered",
         "Colors": "Blue, Green, Yellow",
-        "Sizes": "Custom as per requirement",
-        "Order Type": "Bulk orders only"
-      }
+        "Sizes": "Custom sizes for bulk orders",
+        "Order Type": "Bulk manufacturing only"
+      },
+      galleryImages: [
+        "/Images/Tarpauline/cover.jpeg",
+        "/Images/Tarpauline/cover1.jpeg",
+        "/Images/Tarpauline/cross-laminated-multilayer-ldpe-ll-tarpaulins.jpeg",
+        "/Images/Tarpauline/cross-laminated-tarpaulin.jpg",
+        "/Images/Tarpauline/Tarp-water.jpeg",
+        "/Images/Tarpauline/Tarp-water1.jpeg",
+        "/Images/Tarpauline/Tarp1.jpeg",
+        "/Images/Tarpauline/Tarp2.jpeg",
+        "/Images/Tarpauline/Tarp3.jpeg"
+      ]
     },
     {
       id: "poncho",
       title: "Poncho Raincoats",
-      category: "Personal Protection",
-      image: "/Images/Poncho/transparent.jpeg",
-      description: "High-quality waterproof poncho raincoats available in various colors. Perfect for bulk orders with custom branding.",
+      category: "BULK ORDERS AVAILABLE",
+      image: "/Images/Poncho/all.jpeg",
+      description: "High-quality waterproof poncho raincoats manufactured for bulk orders. Available in various colors with custom branding options.",
       features: [
         "100% Waterproof material",
-        "Available in multiple colors",
-        "Custom branding options",
+        "Multiple color options",
+        "Custom branding available",
+        "Bulk manufacturing",
+        "Quality packaging"
+      ],
+      applications: [
+        "Industrial use",
+        "Construction sites",
+        "Emergency services",
+        "Outdoor events",
+        "Bulk distribution"
+      ],
+      specifications: {
+        "Material": "High-quality waterproof material",
+        "Type": "Poncho style raincoat",
+        "Colors": "Blue, Green, Yellow, Purple, Transparent",
+        "Packaging": "Custom packaging available",
+        "Order Type": "Bulk orders only"
+      },
+      galleryImages: [
+        "/Images/Poncho/all.jpeg",
+        "/Images/Poncho/blue.jpeg",
+        "/Images/Poncho/green.jpg",
+        "/Images/Poncho/purple.jpeg",
+        "/Images/Poncho/transparent.jpeg",
+        "/Images/Poncho/yellow.jpg"
+      ]
         "Adjustable hood",
         "Multiple pocket options",
         "Various colors available"

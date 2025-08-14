@@ -7,19 +7,14 @@ const Hero = () => {
   
   const heroSlides = [
     {
-      title: "Indoline Tarpaulins",
-      subtitle: "Premium quality multilayered cross laminated tarpaulins for industrial applications",
+      title: "Multilayered Cross Laminated Tarpaulins",
+      subtitle: "CUSTOM SIZES AVAILABLE FOR BULK ORDERS",
       image: "/Images/Tarpauline/cover.jpeg"
     },
     {
       title: "Poncho Raincoats", 
-      subtitle: "High-quality waterproof ponchos available in various colors",
+      subtitle: "High-quality waterproof ponchos available in various colors for bulk orders",
       image: "/Images/Poncho/all.jpeg"
-    },
-    {
-      title: "Custom Bulk Manufacturing",
-      subtitle: "Custom tarpaulins and ponchos with your branding and specifications", 
-      image: "/Images/Tarpauline/Tarp-water.jpeg"
     }
   ];
 

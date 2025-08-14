@@ -6,11 +6,11 @@ const Products = () => {
   const products = [
     {
       id: "tarpaulins",
-      title: "Indoline Cross Laminated Tarpaulins",
-      description: "Premium quality multilayered cross laminated tarpaulins with superior strength and durability. Available in custom sizes for bulk orders.",
+      title: "Multilayered Cross Laminated Tarpaulins",
+      description: "Premium quality multilayered cross laminated tarpaulins with superior strength and durability. CUSTOM SIZES AVAILABLE FOR BULK ORDERS.",
       icon: Shield,
-      features: ["100% Waterproof", "UV Resistant", "Cross Laminated", "Custom Sizes Available"],
-      image: "/Images/Tarpauline/cross-laminated-tarpaulin.jpg"
+      features: ["100% Waterproof", "UV Resistant", "Cross Laminated", "Bulk Manufacturing", "Custom Sizes"],
+      image: "/Images/Tarpauline/cover.jpeg"
     },
     {
       id: "poncho",
@@ -18,23 +18,7 @@ const Products = () => {
       description: "High-quality waterproof poncho raincoats available in various colors. Bulk orders with custom branding available.",
       icon: Droplets,
       features: ["100% Waterproof", "Multiple Colors", "Custom Branding", "Bulk Orders"],
-      image: "/Images/Poncho/transparent.jpeg"
-    },
-    {
-      id: "plastic-rolls",
-      title: "Plastic Rolls",
-      description: "Industrial-grade plastic rolls that can be converted into tarpaulins or raincoats according to your specifications.",
-      icon: Factory,
-      features: ["Custom Length", "High Quality", "Bulk Manufacturing", "Multiple Applications"],
-      image: "/Images/Tarpauline/rolls.jpeg"
-    },
-    {
-      id: "custom",
-      title: "Custom Solutions",
-      description: "Tailored manufacturing solutions for tarpaulins and ponchos with your branding and packaging requirements.",
-      icon: Settings,
-      features: ["Custom Sizing", "Custom Branding", "Bulk Orders", "Custom Packaging"],
-      image: "/Images/Tarpauline/Tarp1.jpeg"
+      image: "/Images/Poncho/all.jpeg"
     }
   ];
 

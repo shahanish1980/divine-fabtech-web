@@ -1,5 +1,15 @@
 import { useState } from "react";
-import { ArrowLeft, ShoppingCart, Phone, Mail, Download } from "lucide-react";
+import { ArrowLeft, ShoppingCart, Phone, Mail,     poncho: {
+      title: "Poncho Raincoats",
+      category: "BULK ORDERS WITH CUSTOM BRANDING",
+      images: [
+        "/Images/Poncho/all.jpeg",
+        "/Images/Poncho/blue.jpeg",
+        "/Images/Poncho/green.jpg",
+        "/Images/Poncho/purple.jpeg",
+        "/Images/Poncho/transparent.jpeg",
+        "/Images/Poncho/yellow.jpg"
+      ],from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -24,15 +34,18 @@ const ProductDetailPage = () => {
   // Product data - in a real app, this would come from an API
   const productData: { [key: string]: any } = {
     tarpaulins: {
-      title: "Multilayered Crosslaminated Tarpaulins",
-      category: "Heavy Duty Protection",
-      price: "₹150-400/sq ft",
+      title: "Multilayered Cross Laminated Tarpaulins",
+      category: "CUSTOM SIZES FOR BULK ORDERS",
       images: [
-        "/placeholder.svg",
-        "/placeholder.svg",
-        "/placeholder.svg",
-        "/placeholder.svg",
-        "/placeholder.svg"
+        "/Images/Tarpauline/cover.jpeg",
+        "/Images/Tarpauline/cover1.jpeg",
+        "/Images/Tarpauline/cross-laminated-multilayer-ldpe-ll-tarpaulins.jpeg",
+        "/Images/Tarpauline/cross-laminated-tarpaulin.jpg",
+        "/Images/Tarpauline/Tarp-water.jpeg",
+        "/Images/Tarpauline/Tarp-water1.jpeg",
+        "/Images/Tarpauline/Tarp1.jpeg",
+        "/Images/Tarpauline/Tarp2.jpeg",
+        "/Images/Tarpauline/Tarp3.jpeg"
       ],
       description: "Our premium multilayered crosslaminated tarpaulins are engineered for maximum durability and weather resistance. These heavy-duty protective covers are perfect for industrial applications requiring long-lasting protection against harsh environmental conditions.",
       features: [
@@ -129,22 +142,22 @@ const ProductDetailPage = () => {
         "Easy storage and portability"
       ]
     },
-    fabrics: {
-      title: "Industrial Fabrics",
-      category: "Specialized Materials",
-      price: "₹80-300/sq meter",
+    poncho: {
+      title: "Poncho Raincoats",
+      category: "BULK ORDERS WITH CUSTOM BRANDING",
       images: [
-        "/placeholder.svg",
-        "/placeholder.svg",
-        "/placeholder.svg",
-        "/placeholder.svg",
-        "/placeholder.svg"
+        "/Images/Poncho/all.jpeg",
+        "/Images/Poncho/blue.jpeg",
+        "/Images/Poncho/green.jpg",
+        "/Images/Poncho/purple.jpeg",
+        "/Images/Poncho/transparent.jpeg",
+        "/Images/Poncho/yellow.jpg"
       ],
-      description: "Specialized fabric solutions engineered for various industrial applications. Our technical fabrics are designed to meet specific performance requirements with superior strength and durability.",
+      description: "High-quality waterproof poncho raincoats manufactured for bulk orders. Available in various colors with custom branding options.",
       features: [
-        "Chemical resistant properties",
-        "Fire retardant treatments available",
-        "High tensile strength",
+        "100% Waterproof material",
+        "Multiple color options",
+        "Custom branding available",
         "Abrasion and tear resistance",
         "Custom weaving patterns",
         "Technical specifications compliance",
