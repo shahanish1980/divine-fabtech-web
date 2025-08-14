@@ -105,8 +105,6 @@ Sent from Divine Fabtech Industries Contact Form
 
   return (
     <div className="min-h-screen">
-      <Header />
-      
       <main>
         {/* Hero Section */}
         <section className="bg-primary text-primary-foreground py-16">
@@ -478,8 +476,6 @@ Sent from Divine Fabtech Industries Contact Form
           </div>
         </section>
       </main>
-
-      <Footer />
     </div>
   );
 };

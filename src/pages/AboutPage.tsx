@@ -85,8 +85,6 @@ const AboutPage = () => {
 
   return (
     <div className="min-h-screen">
-      <Header />
-      
       <main>
         {/* Hero Section */}
         <section className="bg-primary text-primary-foreground py-16">
@@ -349,8 +347,6 @@ const AboutPage = () => {
           </div>
         </section>
       </main>
-
-      <Footer />
     </div>
   );
 };

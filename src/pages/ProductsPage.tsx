@@ -2,8 +2,6 @@ import { ArrowLeft, ShoppingCart, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 
 const ProductsPage = () => {
@@ -136,8 +134,6 @@ const ProductsPage = () => {
 
   return (
     <div className="min-h-screen">
-      <Header />
-      
       <main>
         {/* Hero Section */}
         <section className="bg-primary text-primary-foreground py-16">
@@ -266,8 +262,6 @@ const ProductsPage = () => {
           </div>
         </section>
       </main>
-
-      <Footer />
     </div>
   );
 };

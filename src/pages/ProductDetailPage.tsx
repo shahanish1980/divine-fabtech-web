@@ -6,8 +6,6 @@ import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import { Link, useParams } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
 
@@ -301,8 +299,6 @@ ${inquiryForm.message}
 
   return (
     <div className="min-h-screen">
-      <Header />
-      
       <main>
         {/* Breadcrumb */}
         <section className="py-4 bg-muted/30">
@@ -560,8 +556,6 @@ ${inquiryForm.message}
           </div>
         </section>
       </main>
-
-      <Footer />
     </div>
   );
 };
