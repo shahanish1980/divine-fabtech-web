@@ -43,7 +43,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/c55d5973-6f8b-4e8b-9e3e-61836e53f9d2.png" 
+              src="/Images/logo.png" 
               alt="Divine Fabtech Industries Logo" 
               className="w-12 h-12 object-contain"
             />
