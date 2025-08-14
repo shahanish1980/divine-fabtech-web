@@ -11,17 +11,18 @@ const Footer = () => {
   ];
 
   const products = [
-    "Multilayered Crosslaminated Tarpaulins",
-    "Raincoat Ponchos", 
-    "Industrial Fabrics",
-    "Custom Solutions"
+    "Indoline Brand Tarpaulins",
+    "Multilayered Cross Laminated Tarpaulins",
+    "Poncho Raincoats",
+    "Bulk Custom Orders",
+    "Plastic Rolls"
   ];
 
   const services = [
-    "Quality Assurance",
-    "Custom Manufacturing",
-    "Technical Support",
-    "Fast Delivery"
+    "Custom Sizing",
+    "Bulk Manufacturing",
+    "Custom Branding",
+    "Custom Packaging"
   ];
 
   return (
@@ -36,8 +37,8 @@ const Footer = () => {
               <p className="text-accent font-medium">Industries</p>
             </div>
             <p className="text-sm leading-relaxed">
-              Leading manufacturer of premium industrial fabrics and tarpaulins. 
-              Committed to quality, innovation, and customer satisfaction for over a decade.
+              Leading manufacturer of multilayered cross laminated tarpaulins and poncho raincoats.
+              Home of the Indoline brand, specializing in custom bulk manufacturing solutions.
             </p>
             <div className="flex space-x-4">
               <a 
