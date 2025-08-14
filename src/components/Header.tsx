@@ -39,9 +39,11 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-accent font-bold text-xl">DF</span>
-            </div>
+            <img 
+              src="/lovable-uploads/c55d5973-6f8b-4e8b-9e3e-61836e53f9d2.png" 
+              alt="Divine Fabtech Industries Logo" 
+              className="w-12 h-12 object-contain"
+            />
             <div className="ml-3">
               <h1 className="text-xl font-bold text-accent">Divine Fabtech</h1>
               <p className="text-xs text-primary-foreground/80">Industries</p>
