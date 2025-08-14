@@ -7,19 +7,19 @@ const Hero = () => {
   
   const heroSlides = [
     {
-      title: "Premium Industrial Fabrics",
-      subtitle: "Leading manufacturer of high-performance filter media and conveyor belts",
-      image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&h=800&fit=crop"
+      title: "Indoline Tarpaulins",
+      subtitle: "Premium quality multilayered cross laminated tarpaulins for industrial applications",
+      image: "/Images/Tarpauline/cover.jpeg"
     },
     {
-      title: "Advanced Filter Solutions", 
-      subtitle: "PTFE membrane technology for extreme industrial applications",
-      image: "https://images.unsplash.com/photo-1562813733-b31f71025d54?w=1200&h=800&fit=crop"
+      title: "Poncho Raincoats", 
+      subtitle: "High-quality waterproof ponchos available in various colors",
+      image: "/Images/Poncho/all.jpeg"
     },
     {
-      title: "Conveyor Belt Excellence",
-      subtitle: "Heavy-duty belting solutions for mining and industrial operations", 
-      image: "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=1200&h=800&fit=crop"
+      title: "Custom Bulk Manufacturing",
+      subtitle: "Custom tarpaulins and ponchos with your branding and specifications", 
+      image: "/Images/Tarpauline/Tarp-water.jpeg"
     }
   ];
 

@@ -6,35 +6,35 @@ const Products = () => {
   const products = [
     {
       id: "tarpaulins",
-      title: "Multilayered Crosslaminated Tarpaulins",
-      description: "Heavy-duty tarpaulins with superior strength and weather resistance for industrial applications.",
+      title: "Indoline Cross Laminated Tarpaulins",
+      description: "Premium quality multilayered cross laminated tarpaulins with superior strength and durability. Available in custom sizes for bulk orders.",
       icon: Shield,
-      features: ["Waterproof", "UV Resistant", "Tear Resistant", "Multiple Sizes"],
-      image: "/placeholder.svg"
+      features: ["100% Waterproof", "UV Resistant", "Cross Laminated", "Custom Sizes Available"],
+      image: "/Images/Tarpauline/cross-laminated-tarpaulin.jpg"
     },
     {
-      id: "raincoats",
-      title: "Raincoat Ponchos",
-      description: "High-quality waterproof raincoats and ponchos for personal and industrial use.",
+      id: "poncho",
+      title: "Poncho Raincoats",
+      description: "High-quality waterproof poncho raincoats available in various colors. Bulk orders with custom branding available.",
       icon: Droplets,
-      features: ["100% Waterproof", "Lightweight", "Durable", "Comfortable"],
-      image: "/placeholder.svg"
+      features: ["100% Waterproof", "Multiple Colors", "Custom Branding", "Bulk Orders"],
+      image: "/Images/Poncho/transparent.jpeg"
     },
     {
-      id: "fabrics",
-      title: "Industrial Fabrics",
-      description: "Specialized fabric solutions for various industrial applications and requirements.",
+      id: "plastic-rolls",
+      title: "Plastic Rolls",
+      description: "Industrial-grade plastic rolls that can be converted into tarpaulins or raincoats according to your specifications.",
       icon: Factory,
-      features: ["Chemical Resistant", "Fire Retardant", "High Tensile Strength", "Custom Specifications"],
-      image: "/placeholder.svg"
+      features: ["Custom Length", "High Quality", "Bulk Manufacturing", "Multiple Applications"],
+      image: "/Images/Tarpauline/rolls.jpeg"
     },
     {
       id: "custom",
       title: "Custom Solutions",
-      description: "Tailored fabric solutions designed to meet your specific industrial requirements.",
+      description: "Tailored manufacturing solutions for tarpaulins and ponchos with your branding and packaging requirements.",
       icon: Settings,
-      features: ["Bespoke Design", "Technical Consultation", "Quality Assurance", "After-sales Support"],
-      image: "/placeholder.svg"
+      features: ["Custom Sizing", "Custom Branding", "Bulk Orders", "Custom Packaging"],
+      image: "/Images/Tarpauline/Tarp1.jpeg"
     }
   ];
 

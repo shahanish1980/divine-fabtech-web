@@ -69,7 +69,7 @@ Sent from Divine Fabtech Industries Contact Form
       title: "Phone & WhatsApp",
       details: "+91 9825148321",
       action: "tel:9825148321",
-      description: "Available 24/7 for urgent inquiries"
+      description: "Available 10:00 AM to 10:00 PM"
     },
     {
       icon: Mail,
@@ -81,7 +81,7 @@ Sent from Divine Fabtech Industries Contact Form
     {
       icon: MapPin,
       title: "Location",
-      details: "Gujarat, India",
+      details: "Survey No 710-711, Village Rupal, Bavla, Jivapura, Gujarat 382220",
       action: null,
       description: "Serving customers nationwide"
     },
@@ -97,7 +97,7 @@ Sent from Divine Fabtech Industries Contact Form
   const officeLocations = [
     {
       title: "Head Office",
-      address: "Divine Fabtech Industries, Gujarat, India",
+      address: "Divine Fabtech Industries, Survey No 710-711, Village Rupal, Bavla, Jivapura, Gujarat 382220",
       phone: "+91 9825148321",
       email: "divine.fabtech@gmail.com"
     }

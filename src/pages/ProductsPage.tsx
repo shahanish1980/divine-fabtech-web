@@ -8,16 +8,15 @@ const ProductsPage = () => {
   const products = [
     {
       id: "tarpaulins",
-      title: "Multilayered Crosslaminated Tarpaulins",
+      title: "Indoline Cross Laminated Tarpaulins",
       category: "Heavy Duty Protection",
-      price: "Starting from ₹150/sq ft",
-      image: "/placeholder.svg",
-      description: "Premium quality multilayered crosslaminated tarpaulins designed for maximum durability and weather resistance.",
+      image: "/Images/Tarpauline/cross-laminated-multilayer-ldpe-ll-tarpaulins.jpeg",
+      description: "Our premium Indoline brand cross laminated tarpaulins offer superior strength and durability for all industrial applications.",
       features: [
         "100% Waterproof",
         "UV Resistant coating",
-        "Tear resistant material",
-        "Temperature resistant (-40°C to +70°C)",
+        "Cross Laminated for extra strength",
+        "Temperature resistant",
         "Reinforced edges",
         "Custom sizes available"
       ],
@@ -30,24 +29,23 @@ const ProductsPage = () => {
         "Marine applications"
       ],
       specifications: {
-        "Material": "HDPE/LDPE Laminated",
-        "Thickness": "150-300 GSM",
-        "Colors": "Blue, Green, Silver, White",
+        "Material": "Cross Laminated HDPE/LDPE",
+        "Type": "Multilayered",
+        "Colors": "Blue, Green, Yellow",
         "Sizes": "Custom as per requirement",
-        "Warranty": "2 Years"
+        "Order Type": "Bulk orders only"
       }
     },
     {
-      id: "raincoats",
-      title: "Raincoat Ponchos",
+      id: "poncho",
+      title: "Poncho Raincoats",
       category: "Personal Protection",
-      price: "Starting from ₹250/piece",
-      image: "/placeholder.svg",
-      description: "High-quality waterproof raincoats and ponchos for personal and industrial use.",
+      image: "/Images/Poncho/transparent.jpeg",
+      description: "High-quality waterproof poncho raincoats available in various colors. Perfect for bulk orders with custom branding.",
       features: [
-        "100% Waterproof PVC material",
-        "Lightweight and comfortable",
-        "Welded seams for extra protection",
+        "100% Waterproof material",
+        "Available in multiple colors",
+        "Custom branding options",
         "Adjustable hood",
         "Multiple pocket options",
         "Various colors available"

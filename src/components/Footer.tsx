@@ -122,7 +122,7 @@ const Footer = () => {
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                <span className="text-sm">Gujarat, India</span>
+                <span className="text-sm">Survey No 710-711, Village Rupal, Bavla, Jivapura, Gujarat 382220</span>
               </div>
             </div>
           </div>
