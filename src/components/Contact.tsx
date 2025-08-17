@@ -62,8 +62,8 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Create WhatsApp message
-    const whatsappMessage = `*New Inquiry from Website*
+    // Prepare WhatsApp message
+    const message = `*New Website Inquiry*
 
 *Name:* ${formData.name}
 *Email:* ${formData.email}
@@ -72,19 +72,23 @@ const Contact = () => {
 *Subject:* ${formData.subject}
 
 *Message:*
-${formData.message}`;
+${formData.message}
 
-    // Create WhatsApp link with the message
-    const whatsappNumber = "919825148321"; // Include country code (91)
-    const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+_Sent from Divine Fabtech Website_`;
+
+    // Format phone number for WhatsApp (add country code if not present)
+    const phone = "919825148321";
     
-    // Open WhatsApp in a new tab
-    window.open(whatsappLink, '_blank');
-
+    // Create WhatsApp URL
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
+    
+    // Open WhatsApp
+    window.location.href = whatsappUrl;
+    
     // Show success message
     toast({
-      title: "Message Ready",
-      description: "WhatsApp will open with your message",
+      title: "Opening WhatsApp",
+      description: "Redirecting you to WhatsApp to send your message",
       duration: 3000,
     });
   };
