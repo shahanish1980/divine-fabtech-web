@@ -65,16 +65,15 @@ const Contact = () => {
     // Format phone number for WhatsApp (add country code if not present)
     const phone = "919825148321";
 
-    // Prepare WhatsApp message - Keep it simple and direct
-    // Use %0A for new lines to ensure WhatsApp Web handles them correctly
-    const message =
-      `*Inquiry from Website*` + "%0A" +
-      `👤 ${formData.name || ""}` + "%0A" +
-      `📧 ${formData.email || ""}` + "%0A" +
-      `📱 ${formData.phone || ""}` + "%0A" +
-      `🏢 ${formData.company || ""}` + "%0A" +
-      `📝 ${formData.subject || ""}` + "%0A%0A" +
-      `💬 ${formData.message || ""}`;
+    // Prepare WhatsApp message - Use simple format that works better
+    const message = 
+      `*Inquiry from Website*\n\n` +
+      `Name: ${formData.name || ""}\n` +
+      `Email: ${formData.email || ""}\n` +
+      `Phone: ${formData.phone || ""}\n` +
+      `Company: ${formData.company || ""}\n` +
+      `Subject: ${formData.subject || ""}\n\n` +
+      `Message:\n${formData.message || ""}`;
 
     // Create WhatsApp click-to-chat URL with pre-filled message
     const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
