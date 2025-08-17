@@ -2,8 +2,6 @@ import Hero from "@/components/Hero";
 import Products from "@/components/Products";
 import About from "@/components/About";
 import WhyChooseUs from "@/components/WhyChooseUs";
-import Statistics from "@/components/Statistics";
-import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 
 const Index = () => {
@@ -13,8 +11,6 @@ const Index = () => {
       <Products />
       <About />
       <WhyChooseUs />
-      <Statistics />
-      <Testimonials />
       <Contact />
     </div>
   );
