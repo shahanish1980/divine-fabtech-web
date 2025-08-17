@@ -82,8 +82,8 @@ _Sent from Divine Fabtech Website_`;
     // Create WhatsApp URL
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
     
-    // Open WhatsApp
-    window.location.href = whatsappUrl;
+    // Open WhatsApp in a new tab
+    window.open(whatsappUrl, '_blank');
     
     // Show success message
     toast({
