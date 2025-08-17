@@ -278,16 +278,16 @@ ${formData.message}
               <div className="space-y-6">
                 <div className="bg-muted rounded-lg p-8 text-center">
                   <MapPin className="h-12 w-12 text-primary mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold text-foreground mb-2">Divine Fabtech Industries</h3>
+                  <h3 className="text-xl font-semibold text-foreground mb-2">DIVINE FABTECH INDUSTRIES</h3>
                   <p className="text-muted-foreground mb-4">
                     Survey No 710-711, Village Rupal<br />
-                    Bavla, Jivapura, Gujarat 382220<br />
-                    India
+                    Rupal, Bavla, Jivapura<br />
+                    Gujarat 382220, India
                   </p>
                 </div>
                 <div className="aspect-video w-full overflow-hidden rounded-lg border">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.675845279244!2d72.33160827598888!3d23.00385447922442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b7620d3571f%3A0x91e1bb0d2bb8f869!2sDIVINE%20FABTECH%20INDUSTRIES!5e0!3m2!1sen!2sin!4v1692333159144!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.677161008681!2d72.32901827500463!3d23.00379997922442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b7620d3571f%3A0x91e1bb0d2bb8f869!2sDIVINE%20FABTECH%20INDUSTRIES%2C%20Survey%20No%20710-711%2C%20Village%20Rupal%2C%20Bavla%2C%20Jivapura%2C%20Gujarat%20382220!5e0!3m2!1sen!2sin!4v1692333400000!5m2!1sen!2sin"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
