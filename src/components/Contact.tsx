@@ -62,14 +62,26 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Prepare WhatsApp message with proper line breaks
-    const message = `*New Website Inquiry*%0A%0A*Name:* ${formData.name}%0A*Email:* ${formData.email}%0A*Phone:* ${formData.phone}%0A*Company:* ${formData.company}%0A*Subject:* ${formData.subject}%0A%0A*Message:*%0A${formData.message}%0A%0A_Sent from Divine Fabtech Website_`;
-
     // Format phone number for WhatsApp (add country code if not present)
     const phone = "919825148321";
+
+    // Prepare WhatsApp message
+    const message = 
+`New Website Inquiry
+
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Company: ${formData.company}
+Subject: ${formData.subject}
+
+Message:
+${formData.message}
+
+Sent from Divine Fabtech Website`;
     
-    // Create WhatsApp URL
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
+    // Create WhatsApp URL using wa.me format
+    const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
     
     // Open WhatsApp in a new tab
     window.open(whatsappUrl, '_blank');
