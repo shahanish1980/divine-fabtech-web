@@ -27,24 +27,23 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Create email content
-    const emailSubject = "INQUIRY";
-    const emailBody = `
-Name: ${formData.name}
-Email: ${formData.email}
-Phone: ${formData.phone}
-Company: ${formData.company}
-Subject: ${formData.subject}
-
-Message:
-${formData.message}
-    `;
-
-    // Create mailto link
-    const mailtoLink = `mailto:divine.fabtech@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+    // Create WhatsApp message
+    const whatsappMessage = `*New Inquiry from Website*
     
-    // Open email client
-    window.location.href = mailtoLink;
+*Name:* ${formData.name}
+*Email:* ${formData.email}
+*Phone:* ${formData.phone}
+*Company:* ${formData.company}
+*Subject:* ${formData.subject}
+
+*Message:*
+${formData.message}`;
+
+    // Create WhatsApp link (works for both mobile and desktop)
+    const whatsappLink = `https://wa.me/919825148321?text=${encodeURIComponent(whatsappMessage)}`;
+    
+    // Open WhatsApp
+    window.open(whatsappLink, '_blank');
     
     // Show success message
     toast({
@@ -258,9 +257,11 @@ ${formData.message}
                     />
                   </div>
 
-                  <Button type="submit" size="lg" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
-                    <Send className="mr-2 h-5 w-5" />
-                    Send Inquiry
+                  <Button type="submit" size="lg" className="w-full bg-[#25D366] hover:bg-[#20BD5C] text-white">
+                    <svg className="mr-2 h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm4.52 7.16l-4.15 6.67c-.75 1.2-2.4 1.55-3.65.78-.3-.18-.56-.42-.78-.71L6.9 14.05l-.71-1.21 1.38-.8 1.04 1.8 3.84-6.18c.75-1.2 2.4-1.55 3.65-.78 1.25.77 1.6 2.42.83 3.67l-.37.61z"/>
+                    </svg>
+                    Send via WhatsApp
                   </Button>
                 </form>
               </CardContent>
