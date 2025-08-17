@@ -276,25 +276,31 @@ ${formData.message}
             </CardHeader>
             <CardContent>
               <div className="space-y-6">
-                <div className="bg-muted rounded-lg p-8 text-center">
-                  <MapPin className="h-12 w-12 text-primary mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold text-foreground mb-2">DIVINE FABTECH INDUSTRIES</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Survey No 710-711, Village Rupal<br />
-                    Rupal, Bavla, Jivapura<br />
-                    Gujarat 382220, India
-                  </p>
-                </div>
-                <div className="aspect-video w-full overflow-hidden rounded-lg border">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.677161008681!2d72.32901827500463!3d23.00379997922442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b7620d3571f%3A0x91e1bb0d2bb8f869!2sDIVINE%20FABTECH%20INDUSTRIES%2C%20Survey%20No%20710-711%2C%20Village%20Rupal%2C%20Bavla%2C%20Jivapura%2C%20Gujarat%20382220!5e0!3m2!1sen!2sin!4v1692333400000!5m2!1sen!2sin"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                  ></iframe>
+                <div className="bg-white rounded-lg shadow-sm border p-4">
+                  <div className="flex items-center justify-between mb-4">
+                    <div>
+                      <h3 className="text-lg font-semibold text-foreground">DIVINE FABTECH INDUSTRIES</h3>
+                      <p className="text-sm text-muted-foreground mt-1">Survey No 710-711, Village Rupal, Bavla, Gujarat 382220</p>
+                    </div>
+                    <a 
+                      href="https://www.google.com/maps/search/Survey No 710-711Village Rupal Rupal , Bavla, Jivapura, Gujarat 382220"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-primary text-primary-foreground px-4 py-2 rounded-md text-sm hover:bg-primary/90 transition-colors"
+                    >
+                      Directions
+                    </a>
+                  </div>
+                  <div className="aspect-[16/7] w-full overflow-hidden rounded-md bg-muted">
+                    <iframe
+                      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Survey No 710-711Village Rupal Rupal , Bavla, Jivapura, Gujarat 382220"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
                 </div>
               </div>
             </CardContent>
