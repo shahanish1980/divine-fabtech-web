@@ -65,26 +65,22 @@ const Contact = () => {
     // Format phone number for WhatsApp (add country code if not present)
     const phone = "919825148321";
 
-    // Prepare WhatsApp message
+    // Prepare WhatsApp message - Keep it simple and direct
     const message = 
-`New Website Inquiry
+`*Inquiry from Website*
+👤 ${formData.name}
+📧 ${formData.email}
+📱 ${formData.phone}
+🏢 ${formData.company}
+📝 ${formData.subject}
 
-Name: ${formData.name}
-Email: ${formData.email}
-Phone: ${formData.phone}
-Company: ${formData.company}
-Subject: ${formData.subject}
-
-Message:
-${formData.message}
-
-Sent from Divine Fabtech Website`;
+💬 ${formData.message}`;
     
-    // Create WhatsApp URL using wa.me format
-    const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    // Create WhatsApp click-to-chat URL with pre-filled message
+    const whatsappUrl = `https://wa.me/919825148321?text=${encodeURIComponent(message)}`;
     
-    // Open WhatsApp in a new tab
-    window.open(whatsappUrl, '_blank');
+    // Open in new window for better compatibility
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
     
     // Show success message
     toast({
